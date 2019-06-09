@@ -1,0 +1,9 @@
+CSS NOTES
+---------------------------------------------------------------------------
+There are a bunch of weird css tricks utilized in this theme. Instead of being confused by them, here's a write up of what everything does.
+---------------------------------------------------------------------------
+
+CSS CONCEPT #1: CSS LOCKS
+"A CSS lock is a Responsive Web Design technique that lets you transition smoothly between two values, depending on the current viewport size, rather than jump straight from one values to the other" - Florens Verschelde
+
+The idea is basically to set a minimum font-size value (x) and a maximum font-size value (y). x will show on a specified small-size screen, and y will show on a specified large-size screen. The CSS lock will be utilized to smoothly transition from x size to y size for all screens between the specified small and large screens.

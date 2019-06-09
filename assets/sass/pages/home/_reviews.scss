@@ -1,0 +1,49 @@
+section.reviews-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+  // Heading 
+  div.reviews-heading {
+    text-align: center;
+    padding-bottom: 50px;
+  
+    h3.reviews-title {
+      text-transform: uppercase;
+      color: $theme-blue;
+      font-size: 28px;
+    }
+  }
+  
+  // Reviews CPT
+  div.reviews-container {
+    display: flex;
+    justify-content: center;
+    
+    div.review-item {
+      display: block;
+      width: 400px;
+      height: 300px;
+      padding: 10px 50px;
+      background-color: #f4f4f4;
+      text-align: center;
+      position: relative;
+      
+      p.review-title {
+        color: $theme-blue;
+      }
+    }
+  }
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 425px) {
+  section.reviews-section {
+    div.reviews-container {
+      display: block;
+      
+      div.review-item {
+        width: 100%;
+      }
+    }
+  }
+}

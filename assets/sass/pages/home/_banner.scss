@@ -1,0 +1,45 @@
+section.home-banner {
+  height: 100vh;
+  background-image: url(http://residentialzonecarpentry.com/wp-content/uploads/2019/05/Arches-Pillars-Banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  div.banner-title-container {
+    text-align: center;
+    padding-top: 100px; //Need to fix for mobile
+
+    h2.banner-title {
+      font-family: $heading_font;
+      font-size: 48px;
+      letter-spacing: 1px;
+      color: white;
+      margin-bottom: 0px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    p.banner-subtitle {
+      font-family: $heading_font;
+      font-size: 18;
+      letter-spacing: 1px;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    a.banner-cta {
+      background-color: $theme_blue;
+      padding: 10px 30px;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+    }
+    a:hover {
+      background-color: white;
+      color: $theme_blue;
+    }
+  }
+}
+
+/* Mobile Stylings */
+

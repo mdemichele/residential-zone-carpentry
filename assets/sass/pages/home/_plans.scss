@@ -1,0 +1,48 @@
+section.plans-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #005b96;
+
+  div.plans-text-box {
+    padding: 20px;
+    margin-left: 10%;
+    color: white;
+    text-align: center;
+    
+    h4 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+  }
+
+  a.plans-request {
+    padding: 10px 30px;
+    border: 2px solid white;
+    margin-right: 10%;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 1s;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  section.plans-section {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    
+    div.plans-text-box {
+      margin-left: 0%;
+    }
+    a.plans-request {
+      margin-right: 0%;
+      margin: auto;
+    }
+  }
+  
+}

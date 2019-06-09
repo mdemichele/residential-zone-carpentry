@@ -1,0 +1,55 @@
+section.about-section {
+
+  div.about-title-container {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h3.about-title {
+      font-size: $section-heading;
+      color: $theme-blue;
+      text-transform: uppercase;
+    }
+  }
+
+  div.about-blurb-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+    div.about-blurb-text {
+      background-color: $theme-blue;
+      max-width: 40%;
+      height: 100%;
+      padding: 50px;
+      color: white;
+    }
+
+    div.blurb-image {
+      background-color: green;
+      max-width: 40%;
+      width: 40%;
+      background-image: url(http://residentialzonecarpentry.com/wp-content/uploads/2019/05/tim-headshot.jpg);
+      background-position: right;
+    }
+  }
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 767px) {
+  section.about-section {
+    div.about-blurb-container {
+      display: block;
+      div.about-blurb-text {
+        max-width: 100%;
+      }
+      div.blurb-image {
+        height: 300px;
+        max-width: 100%;
+        width: 100%;
+        background-position: top;
+        background-size: cover;
+      }
+    }
+  }
+}

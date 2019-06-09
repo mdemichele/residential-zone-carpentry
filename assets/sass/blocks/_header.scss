@@ -1,0 +1,84 @@
+// Header Section General
+header.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $theme_blue;
+  opacity: 1;
+}
+
+
+// Logo Section
+div.logo-container {
+  a {
+    height: 150px;
+    width: 210px;
+    img.logo-img {
+      height: 150px;
+      width: 210px;
+    }
+  }
+  
+  // Navigation Button
+  a.icon {
+    display: none;
+    padding: 10px 10px 10px 10px;
+  }
+}
+// Navigation Menu Section
+div.navbar {
+  overflow: hidden;
+  padding: 10px 100px 10px 0px;
+
+  a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+// Mobile Styles
+@media screen and (max-width: 768px) {
+  header.home-header {
+    display: block;
+  }
+  
+  div.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a.icon {
+      display: block;
+      font-size: 48px;
+      padding-top: 40px;
+      svg.feather {
+        height: 40px;
+        width: 40px;
+        color: white;
+        float: right;
+      }
+    }
+  }
+
+  div.navbar {
+    padding: 10px 30px 10px 10px;
+    a {
+      display: none;
+    }
+    &.responsive {
+      a {
+        display: block;
+      }
+    }
+  }
+}

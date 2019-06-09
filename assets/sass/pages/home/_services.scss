@@ -1,0 +1,133 @@
+section.services-section {
+  padding-top: 50px;
+  div.services-heading {
+    text-align: center;
+    text-transform: uppercase;
+    color: $theme-blue;
+    font-size: $section-heading;
+    padding-bottom: 50px;
+  }
+
+  div.services-boxes-container {
+    display: flex;
+    justify-content: center;
+
+    div.services-box {
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      
+      
+      div.services-hover {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        opacity: 0;
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: $theme-blue;
+        z-index: 1;
+        
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+
+      div.services-name {
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      img.services-image {
+        width: 300px;
+        height: 300px;
+      }
+      
+      // Hover Styles
+      &.services-box:hover {
+        
+        img.services-image {
+          opacity: 0.3;
+        }
+        
+        div.services-name {
+          opacity: 0;
+        }
+        
+        div.services-hover {
+          opacity: 1;
+        }
+      }
+    }
+    
+    div#service-1 {
+      margin-right: 20px;
+    }
+    
+    div#service-2 {
+      margin-right: 20px;
+    }
+  }
+
+  div.services-button-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+
+
+// Modal
+/* The Modal (background) 
+.modal {
+  display: none; /* Hidden by default 
+  position: fixed; /* Stay in place 
+  z-index: 1; /* Sit on top 
+  padding-top: 100px; /* Location of the box 
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width 
+  height: 100%; /* Full height 
+  overflow: auto; /* Enable scroll if needed 
+  background-color: rgb(0,0,0); /* Fallback color 
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity 
+}
+*/
+
+
+
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+  section.services-section {
+  
+    div.services-boxes-container {
+      display: block;
+    
+      div.services-box {
+        margin: auto;
+      }
+      div#service-1 {
+        margin: auto;
+        margin-bottom: 10px;
+      }
+      div#service-2 {
+        margin: auto;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

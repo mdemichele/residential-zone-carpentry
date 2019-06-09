@@ -1,0 +1,24 @@
+// ==========================================================================
+// Base – Assets
+// ==========================================================================
+
+// Custom Buttons
+.theme-button {
+  cursor: pointer;
+  background-color: $theme-blue;
+  line-height: normal;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  transition: all 0.1s;
+  &:hover, &:active { 
+    text-decoration: none; 
+  }
+  &:hover { 
+    background: #00e1c9; 
+  }
+}
